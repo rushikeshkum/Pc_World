@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.mb{
+  padding: 1rem;
+  border-top: black;
+  
+}
+.title1{
+  text-align: center;
+  font-size: 3rem;
+  
+  background-color: #eee;
+  padding: 2rem;
+  margin: 0rem;
+  border-style: solid;
+}
+.newcart {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.table1{
+  background-color: white;
+}
+.text-center{
+  background: #fff;
+}
+
+.gridcart {
+  display: grid;
+  width: 114em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  padding-top:2rem;
+  padding-bottom: 1rem;
+}
+section{
+  padding-top: 1.4rem;
+}
+.grid-itemcart {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-itemcart:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(254, 0, 0, 0.5);
+}
+
+.card-imgcart {
+  display: block;
+  width: 100%;  
+  height: 20rem;
+  object-fit: cover;
+}
+.btn-success {
+  color: #fff;
+  background-color: #00773f;
+  border-color: #198754;
+  height: 30px;
+}
+.card-contentcart {
+  padding: 3rem;
+}
+
+.card-headercart {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+
+.card-textcart {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btncart {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btncart span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btncart:hover,
+.card-btncart:active {
+  background-color: #c2cffc;
+}
+
+.card-btncart:hover span,
+.card-btncart:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .newcart {
+    padding: 3rem;
+  }
+
+  .gridcart {
+    grid-gap: 3rem;
+  }
+}
